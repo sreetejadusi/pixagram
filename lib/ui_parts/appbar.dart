@@ -19,15 +19,24 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               style: TextStyle(
                   fontSize: Theme.of(context)
                           .textTheme
-                          .titleLarge!
+                          .bodySmall!
                           .fontSize!
                           .toDouble() *
-                      1.3),
+                      1.3,
+                  letterSpacing: 5),
             ),
-            Text('connecting stories')
+            const Text(
+              'connecting memories',
+              style: TextStyle(fontSize: 11),
+            )
           ],
         ),
-        IconButton(onPressed: () {}, icon: Icon(FontAwesomeIcons.bell))
+        IconButton(
+            onPressed: () {},
+            icon: Icon(
+              FontAwesomeIcons.bell,
+              size: 20,
+            ))
       ]),
     );
   }

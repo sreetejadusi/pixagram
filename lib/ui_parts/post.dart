@@ -88,8 +88,9 @@ class SinglePost extends StatelessWidget {
                         IconButton(
                             onPressed: () {},
                             icon: const Icon(
-                              FontAwesomeIcons.ellipsisVertical,
+                              Icons.more_vert_rounded,
                               color: Colors.white,
+                              size: 20,
                             ))
                       ],
                     ),
@@ -117,8 +118,9 @@ class SinglePost extends StatelessWidget {
                       width: 32,
                     ),
                     Icon(
-                      FeatherIcons.messageSquare,
+                      FeatherIcons.messageCircle,
                       color: Colors.white,
+                      size: 20,
                     ),
                     SizedBox(
                       width: 16,
@@ -126,6 +128,10 @@ class SinglePost extends StatelessWidget {
                     Icon(
                       FeatherIcons.heart,
                       color: Colors.white,
+                      size: 20,
+                    ),
+                    SizedBox(
+                      width: 8,
                     ),
                   ]),
                 ),
